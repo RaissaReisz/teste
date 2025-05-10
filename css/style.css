@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .background {
+    background: linear-gradient(to top, #f79a29, #ff727e, #fb435b);
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 0.5rem;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+  }
+  
+  /* Sol amarelo com blur */
+  .sol {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sol-fundo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffaa3b;
+    border-radius: 50%;
+    filter: blur(50px); /* só aqui o blur */
+    z-index: 0;
+  }
+  
+  .texto-no-sol {
+    position: relative;
+    z-index: 1; /* texto por cima do blur */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  
+  #tardezinha {
+    font-family: "Pacifico", cursive;
+    font-size: 3.0rem;
+    margin-top: 10px;/*diminuindo a margem*/
+  }
+  
+  #mirella {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Lexend Exa", sans-serif;
+    margin-top: -25px;
+  }
+  
+  #data {
+    font-family: "Lexend Exa", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 200;
+    margin-top: 10px;
+    
+  }
+  #local{
+    font-family: "Lexend Exa", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 200;
+    margin-top: -7px;
+    white-space: nowrap;
+  }
+  #texto {
+    font-size: 0.8rem;
+    font-family: "Lexend Exa", sans-serif;
+    font-weight: 100;
+    color: #ffffff;
+    white-space: nowrap; /*não quebra o texto*/
+    
+    
+  }
+  
+  /* Formulário */
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .formulario input {
+    padding: 0.7rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: rgb(252, 191, 151);
+  }
+  
+  .formulario button {
+    padding: 0.7rem;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(218, 110, 38);
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .formulario button:hover {
+    background-color: #ffe6eb;
+  }
+  
+  /* Palmeiras decorativas */
+  .palmeira {
+    position: fixed;
+    top: 0;
+    width: 30vw;
+    opacity: 0.4;
+    filter: blur(2px);
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  .palmeira.esquerda {
+    left: 0;
+  }
+  
+  .palmeira.direita {
+    right: 0;
+  }
+  
+  #agradecer{
+    color: #ffffff;
+    font-family: "Lexend Exa", sans-serif;
+    font-weight: 600;
+  }
+
+  #pgagradece{
+    background: linear-gradient(to top, #f79a29, #ff727e, #fb435b);
+  }
+  #mainagradece {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* <- Aqui a mudança */
+    align-items: center;
+    padding-top: 4rem;
+    gap: 0.5rem;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+  }
+
+  #convite{
+    position: fixed;
+    top: 0;
+    width: 50vw;
+    padding-top: 9rem;
+    pointer-events: none;
+  }
